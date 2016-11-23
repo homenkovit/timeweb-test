@@ -6,36 +6,48 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="login-wrapper">
-    <div class="system-message">
-      <span class="system-message__icon"></span>
-      <span class="system-message__text"></span>
-    </div>
-    <div class="login-block">
-      <section class="login-form">
-        <div class="logo">
-          <p>timeweb</p>
-          <br>
-          <p>панель управления vds</p>
-        </div>
-        <form action="POST">
-          <input type="text" name="login" id="login" class="form__input" placeholder="Логин" required>
-          <input type="password" name="password" id="password" class="form__input" placeholder="Пароль" required>
-          <input type="checkbox" id="remember-me">
-          <label for="remember-me">Запомнить меня</label>
-          <a href="javascript:void(0)" class="repair-password">Восстановить пароль</a>
-          <button type="submit" class="form__button">Войти</button>
-        </form>
-      </section>
-      <nav class="services-menu">
-        <ul>
-          <li><span>хостинг</span></li>
-          <li><span>vds</span></li>
-          <li><span>интеграторы</span></li>
-          <li><span>вебмастера</span></li>
-          <li><span>почта</span></li>
-        </ul>
-      </nav>
+  <div class="login-page">
+    <div class="login-wrapper">
+      <div class="system-message">
+        <span class="system-message__icon"></span>
+        <span class="system-message__text"></span>
+      </div>
+      <div class="login-block">
+        <section class="login-form">
+          <div class="logo">
+            <span>timeweb</span>
+            <br>
+            <span>панель управления vds</span>
+          </div>
+          <form action="POST">
+            <input type="text" name="login" id="login" class="form__input" placeholder="Логин" required>
+            <input type="password" name="password" id="password" class="form__input" placeholder="Пароль" required>
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Запомнить меня</label>
+            <a href="javascript:void(0)" class="repair-password">Восстановить пароль</a>
+            <button type="submit" class="form__button">Войти</button>
+          </form>
+        </section>
+        <nav class="services-menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <span>хостинг</span>
+            </li>
+            <li class="menu__item">
+              <span>vds</span>
+            </li>
+            <li class="menu__item">
+              <span>интеграторы</span>
+            </li>
+            <li class="menu__item">
+              <span>вебмастера</span>
+            </li>
+            <li class="menu__item">
+              <span>почта</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </body>

@@ -2,3 +2,90 @@
 
 @import "_fonts";
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper {
+  padding: 50px;
+  width: 586px;
+}
+
+.login-block {
+  background-color: white;
+  box-shadow: 3.5px 6.1px 33px rgba(28, 81, 107, 0.07);
+  border-radius: 4px;
+  display: flex;
+}
+
+.login-form {
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  border-right: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 37px 35px 40px 39px;
+  width: 414px;
+}
+
+.services-menu {
+  box-sizing: border-box;
+  width: 172px;
+}
+
+.menu {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  &__item {
+    box-sizing: border-box;
+    border: 1px solid #c5edfc;
+    border-bottom: none;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #def6ff;
+    cursor: pointer;
+    height: 72px;
+    padding-top: 23px;
+    padding-left: 35px;
+    &:first-child {
+      border-top-right-radius: 4px;
+    }
+    &:last-child {
+      border-bottom: 1px solid #c5edfc;
+      border-bottom-right-radius: 4px;
+    }
+    & > span {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      color: #6498b7;
+      border-bottom: 1px dotted #79a8c4;
+      text-shadow: 0.5px 0.9px 0 #effbff;
+    }
+    &:hover {
+      background-color: #c7effe;
+      & > span {
+        color: #43718c;
+        text-shadow: 0.5px 0.9px 0 #d0f3ff;
+        border-bottom: none;
+      }
+    }
+  }
+}
